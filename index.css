@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(darkblue, purple);
+}
+body,
+.container,
+.tasks-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bdb9b9;
+  padding: 20px;
+  flex-direction: column;
+}
+.input-plus {
+  position: relative;
+  margin-bottom: 50px;
+}
+.input {
+  border: none;
+  padding: 10px;
+  background-color: #fff;
+  height: 50px;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", cursive;
+}
+.input,
+.task,
+.counting {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.input,
+.tasks-container,
+.counting {
+  width: 500px;
+}
+.input:focus {
+  outline: none;
+}
+.fa-plus {
+  position: absolute;
+  background-color: purple;
+  color: white;
+  right: 0;
+  padding: 13px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.fa-plus,
+.fa-trash {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.tasks-container {
+  flex-direction: column;
+}
+.task {
+  width: 100%;
+  height: 50px;
+  padding-left: 15px;
+  background-color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.task,
+.counting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  display: flex;
+}
+.fa-check-double,
+.fa-trash {
+  color: white;
+  height: 50px;
+  width: 40px;
+  text-align: center;
+  padding-top: 17px;
+  cursor: pointer;
+}
+.fa-check-double {
+  background-color: darkblue;
+}
+.fa-trash {
+  background-color: purple;
+}
+.counting {
+  padding: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+  background-color: #fff;
+  margin-top: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+.value.finished {
+  text-decoration: line-through;
+}
+::selection {
+  color: black;
+  background-color: yellow;
+}
+.all span {
+  padding: 0 5px;
+  background-color: #e91e63;
+  border-radius: 5px;
+  color: white;
+  font-weight: normal;
+}
+.done span {
+  padding: 0 5px;
+  background-color: #2196f3;
+  border-radius: 5px;
+  color: white;
+  font-weight: normal;
+}
