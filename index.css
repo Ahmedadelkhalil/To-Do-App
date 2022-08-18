@@ -6,7 +6,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(darkblue, purple);
+  background-image: linear-gradient(to right, darkblue, purple);
 }
 body,
 .container,
@@ -16,9 +16,7 @@ body,
   align-items: center;
 }
 .container {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 370px;
   background-color: #bdb9b9;
   padding: 20px;
   flex-direction: column;
@@ -50,7 +48,7 @@ body,
 .input,
 .tasks-container,
 .counting {
-  width: 500px;
+  width: 300px;
 }
 .input:focus {
   outline: none;
@@ -138,4 +136,29 @@ body,
   border-radius: 5px;
   color: white;
   font-weight: normal;
+}
+.delete-all {
+  width: 370px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.del-all {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .input,
+  .tasks-container,
+  .counting,
+  .delete-all {
+    width: 500px;
+  }
 }
